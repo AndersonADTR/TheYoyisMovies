@@ -1,0 +1,41 @@
+feature/auth/
+├── src/
+    └── main/
+        └── kotlin/com/yoyi/auth/
+            ├── di/
+            │   └── AuthModule.kt
+            ├── domain/
+            │   ├── model/
+            │   │   ├── User.kt
+            │   │   └── AuthCredentials.kt
+            │   ├── repository/
+            │   │   └── AuthRepository.kt
+            │   └── usecase/
+            │       ├── LoginUseCase.kt
+            │       ├── RegisterUseCase.kt
+            │       └── ValidateCredentialsUseCase.kt
+            ├── data/
+            │   ├── repository/
+            │   │   └── AuthRepositoryImpl.kt
+            │   ├── remote/
+            │   │   ├── AuthApi.kt
+            │   │   └── model/
+            │   │       └── AuthResponse.kt
+            │   ├── local/
+            │   │   └── AuthLocalDataSource.kt
+            │   └── mapper/
+            │       └── AuthMapper.kt
+            └── presentation/
+                ├── screen/
+                │   ├── login/
+                │   │   ├── LoginScreen.kt
+                │   │   └── LoginViewModel.kt
+                │   └── register/
+                │       ├── RegisterScreen.kt
+                │       └── RegisterViewModel.kt
+                ├── component/
+                │   ├── AuthButton.kt
+                │   └── AuthTextField.kt
+                └── state/
+                    ├── LoginState.kt
+                    └── RegisterState.kt
